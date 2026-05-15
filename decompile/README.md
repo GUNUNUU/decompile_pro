@@ -39,9 +39,49 @@ decompile/
 │   └── run_speccpu.sh                # SPECCPU 项目 IDA 反编译执行脚本
 ├── README.md                         # 项目说明文档
 └── LICENSE                           # 项目许可证
-⚙️ 环境依赖 Requirements
+```
+---
+
+## ⚙️ 环境依赖 Requirements
 操作系统：Linux（推荐 Ubuntu 18.04+）
 Python：3.8+（兼容 Ghidra 与 IDA 脚本环境）
 IDA Pro：7.5+（需安装 Hex-Rays 反编译器插件）
 Ghidra：10.0+（需配置脚本运行环境）
 tmux：用于并行任务调度（可选）
+
+---
+
+## 🚀 使用方法
+
+### 1. Ghidra 反编译
+```bash
+ghidra -run ghidra_single_fun_decompilation.py <binary_path>
+```
+
+### 2. IDA 批量反编译（GitHub 项目）
+```bash
+bash IDA/run_github.sh
+```
+
+### 3. IDA 批量反编译（SPECCPU 项目）
+```bash
+bash IDA/run_speccpu.sh
+```
+
+### 4. 反编译失败统计
+```python
+python Ghidra/decompilation_failure.py decompile.log ghidra
+python Ghidra/decompilation_failure.py decompile.log ida
+```
+---
+
+## 📄 项目声明 Project Statement
+
+本项目的作者及单位：
+The author and affiliation of this project:
+
+```text
+项目名称（Project Name）：decompile-pro
+项目作者（Author）：Yan Lin，Qiongyan Li
+作者单位（Affiliation）：暨南大学网络空间安全学院（College of Cyber Security, Jinan University）
+```
