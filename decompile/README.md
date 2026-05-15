@@ -1,4 +1,4 @@
-# decompile
+# decompile-pro
 二进制反编译自动化工具链 / Automated Binary Decompilation Toolchain
 
 ---
