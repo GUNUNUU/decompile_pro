@@ -23,7 +23,6 @@
 
 ### Ghidra
 - Ghidra 9.x 或更高版本
-- 支持 Python 脚本（Jython）
 - 需要分析的目标二进制文件已在 Ghidra 中打开
 
 ### IDA Pro
